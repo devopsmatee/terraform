@@ -60,15 +60,25 @@ The following input variables are required:
 
 Run the following command to initialize Terraform, which will download the necessary providers and set up the workspace.
 
-```bash
 terraform init
-Step 2: Configure Your Variables
-Create a terraform.tfvars file to set your specific values for the required variables:
 
-hcl
-Copy
+### Step 2: Configure Your Variables
+
+Create a `terraform.tfvars` file to set your specific values for the required variables:
+
 compartment_id        = "your-compartment-id"
 oke_cluster_name      = "your-oke-cluster-name"
 kubernetes_version    = "1.24.0"  # Example Kubernetes version
 node_count            = 3
 ssh_public_key_path   = "/path/to/your/ssh_public_key.pub"
+
+### Step 3: Apply the Configuration
+
+After configuring your variables, run the following command to apply the Terraform configuration:
+
+
+terraform apply
+
+
+
+
