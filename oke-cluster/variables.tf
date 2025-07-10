@@ -1,6 +1,6 @@
 variable "compartment_id" {
   description = "The OCID of the compartment"
-  default     = "ocid1.compartment.oc1..aaaaaaaaedebvo5aglxxmudly6vdjsfytbon7x7refwgijo3rxyjqk7chmda"  # Replace with actual Compartment OCID
+  default     = "ocid1.compartment.oc1.."  # Replace with actual Compartment OCID
 }
 
 variable "region" {
