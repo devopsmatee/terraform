@@ -62,3 +62,13 @@ Run the following command to initialize Terraform, which will download the neces
 
 ```bash
 terraform init
+Step 2: Configure Your Variables
+Create a terraform.tfvars file to set your specific values for the required variables:
+
+hcl
+Copy
+compartment_id        = "your-compartment-id"
+oke_cluster_name      = "your-oke-cluster-name"
+kubernetes_version    = "1.24.0"  # Example Kubernetes version
+node_count            = 3
+ssh_public_key_path   = "/path/to/your/ssh_public_key.pub"
